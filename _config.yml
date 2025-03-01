@@ -1,0 +1,15 @@
+title: MetaboAnnotator
+description: Comprehensive Metabolomics Data Analysis and Annotation Tool
+theme: jekyll-theme-cayman
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true 
