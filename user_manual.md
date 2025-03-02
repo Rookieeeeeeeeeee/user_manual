@@ -23,7 +23,7 @@
 
 ## 1. Introduction
 
-**MetaboAnnotator** is a powerful R-based application designed for metabolomics data analysis and annotation. It provides an integrated solution for compound identification, AI-assisted annotation, and pathway analysis by leveraging multiple databases and AI technologies.
+**MetaboAnnotator** is a powerful R-based application designed for metabolites fusion functional annotation. It provides an integrated solution for real-time compound retrieval coupled with AI-assisted identification, and multi-database metabolite functional annotation.
 
 <div align="center">
   <img src="custom/roadmap.png" alt="MetaboAnnotator Workflow" width="800" />
@@ -33,42 +33,22 @@
 
 ### Key Features
 
-- ✅ **Real-time database querying** (PubChem, HMDB, mzCloud, KEGG)
-- 🤖 **AI-assisted compound identification**
-- 🧪 **Endogenous metabolite identification**
-- 🔄 **Pathway enrichment analysis**
-- 🧬 **Chemical-gene/phenotype interaction analysis**
+- ✅ **Real-time database querying** (PubChem, HMDB, mzCloud, KEGG, CTD, Reactome, ChEBI)
+- 🤖 **AI-assisted compound identification** (e.g., deepseek, gpt-4o-mini)
+- 🧪 **Endogenous metabolite identification** (HMDB, mzCloud)
+- 🔄 **Pathway enrichment analysis** (KEGG, Reactome, Gene Ontology)
+- 🧬 **Chemical-gene/phenotype interaction analysis** (CTD)
 
 ---
 
 ## 2. System Requirements
 
 ### Hardware Requirements
-- **Processor**: Multi-core processor (Intel i5/AMD Ryzen 5 or better recommended)
 - **Memory**: Minimum 8GB RAM (16GB or more recommended)
 - **Storage**: At least 10GB free disk space
 - **Internet**: Stable broadband connection
 
-### Software Requirements
-- **Operating System**: Windows 10/11, macOS 10.15+, or Linux (Ubuntu 20.04+)
-- **R environment**: R 4.0.0 or higher (preferably RStudio)
-- **Required R packages**:
-  
-  | Package | Purpose |
-  |---------|---------|
-  | `shiny` | Web application framework |
-  | `shinyjs` | JavaScript operations in Shiny |
-  | `shinycssloaders` | Loading animations |
-  | `ellmer` | Data processing |
-  | `DT` | Interactive data tables |
-  | `dplyr` | Data manipulation |
-  | `KEGGREST` | KEGG database access |
-  | `ggplot2` | Data visualization |
-  | `rmarkdown` | Report generation |
-
----
-
-## 3. Installation
+## 3. Get Started
 
 ### Step 1: Install R and RStudio
 1. Download and install R from [CRAN](https://cran.r-project.org/)
@@ -80,104 +60,27 @@
 MetaboAnnotator::init_app('your_work_path')
 ```
 
-> **Note**: This function will create a new directory in your working path and automatically detect and update necessary files including PubChem CID-Parent file, ChEBI file, CTD database file, etc.
+> **Note**: This function will create a new directory in your working path, install all necessary packages, and automatically detect and update necessary files including PubChem CID-Parent file, ChEBI file, CTD database file, etc.
 
 ### Step 3: Launch the Application
 ```R
 # Start the MetaboAnnotator user interface
 MetaboAnnotator::run_ui()
 ```
-
 ---
 
-## 4. Getting Started
+## 4. Step-by-Step Usage Guide
 
-### Initial Setup
-
-<div align="center">
-  <img src="custom/database.png" alt="Data Sources" width="600" />
-  <br>
-  <em>Figure 2: MetaboAnnotator Data Sources</em>
-</div>
-
-1. **Launch RStudio**
-   - Open RStudio from your applications menu
-   
-2. **Set your working directory**
-   - Use `setwd()` or the RStudio interface to set your working directory
-   
-3. **Run the initialization command**
-   - Execute `MetaboAnnotator::init_app('your_work_path')`
-   - Wait for all necessary files to download and install
-   
-4. **Launch the application**
-   - Execute `MetaboAnnotator::run_ui()`
-   
-5. **Access the interface**
-   - The application will automatically open in your default web browser
-   - The interface consists of multiple tabs for different analysis steps
-
----
-
-## 5. Main Features
-
-### 5.1 Compound Auto-search (Tab 1)
-
-<div align="center">
-  <em>Figure 3: Compound Auto-search Interface</em>
-</div>
-
-- **Input compound names** (one per line)
-- **Real-time search** across multiple databases
-- **Cache management options**
-- **Progress monitoring** through console output
-
-### 5.2 AI-assisted Identification (Tab 2)
-
-<div align="center">
-  <em>Figure 4: AI-assisted Identification Interface</em>
-</div>
-
-- **Supported AI models**:
-  - `deepseek`
-  - `gpt-4o-mini`
-  - Custom models (configurable)
-  
-- **Features**:
-  - Custom API configuration
-  - Customizable identification prompts
-  - Result review and confirmation
-  - Real-time processing logs
-
-### 5.3 KEGG Analysis
-
-<div align="center">
-  <em>Figure 5: KEGG Analysis Interface</em>
-</div>
-
-- **Pathway mapping**
-- **Metabolic pathway analysis** (81 pathways)
-- **Reaction pathway analysis** (13 pathways)
-- **Interactive visualization**
-
-### 5.4 Endogenous Metabolite Identification
-
-<div align="center">
-  <em>Figure 6: Endogenous Metabolite Identification Interface</em>
-</div>
-
-- **HMDB database integration**
-- **mzCloud database integration**
-- **Automated annotation**
-
----
-
-## 6. Step-by-Step Usage Guide
-
-### 6.1 Compound Search
+### 4.1 Compound Search
 
 1. **Navigate to "1. Compound Auto-search"**
    - Click on the "1. Compound Auto-search" tab in the navigation bar
+
+<div align="center">
+  <img src="custom/cpd_search.png" alt="Compound Auto-search Interface" width="800" />
+  <br>
+  <em>Figure 3: Compound Auto-search Interface</em>
+</div>
 
 2. **Enter compound names**
    - Type or paste compound names in the text area
@@ -201,10 +104,16 @@ MetaboAnnotator::run_ui()
    - Watch the console on the right side for real-time updates
    - The console will display each step of the search process
 
-### 6.2 AI-assisted Identification
+### 4.2 AI-assisted Identification
 
 1. **Navigate to "2. AI-assisted Identification"**
    - Click on the "2. AI-assisted Identification" tab
+
+<div align="center">
+  <img src="custom/ai_assist.png" alt="AI-assisted Identification Interface" width="800" />
+  <br>
+  <em>Figure 4: AI-assisted Identification Interface</em>
+</div>
 
 2. **Load previous results**
    - Click "Load Local Results" to import data from Step 1
@@ -233,25 +142,64 @@ MetaboAnnotator::run_ui()
 8. **Confirm and continue**
    - Click "Confirm Selection and Continue" to proceed
 
-### 6.3 External Dataset Annotation
+> **Note**: Check Progress in the console
 
-- **KEGG pathway analysis**
-  - 81 metabolic pathways
-  - 13 reaction pathways
-  - Interactive pathway maps
+### 4.3 Metabolite Source Identification
 
-- **Reactome pathway analysis**
-  - 10,000+ reactions
-  - Hierarchical pathway organization
+<div align="center">
+  <img src="custom/Source_check.png" alt="Metabolite Source Identification Interface" width="800" />
+  <br>
+  <em>Figure 5: Metabolite Source Identification Interface</em>
+</div>
 
-- **CTD compound annotation**
-  - Chemical-Gene interactions
-  - Chemical-Phenotype interactions
-  - GO enrichment analysis
+1. **Start HMDB Check**
+   - Click "Load Local Final Results" to import data from Step 2
+
+2. **Start HMDB Check**
+
+3. **Start mzCloud Check**
+
+> **Note**: Check Progress in the console
+
+### 4.4 External Dataset Annotation
+
+<div align="center">
+  <img src="custom/external_db.png" alt="External Dataset Annotation Interface" width="800" />
+  <br>
+  <em>Figure 6: External Dataset Annotation Interface</em>
+</div>
+
+1. **Load Local Results**
+
+2. **Select Species**
+
+3. **Select Pathway Analysis Level**
+
+4. **Run External Database Annotation**
+
+5. **(Optional) Copy CID List**
+
+6. **(Optional) Copy KEGG+HMDB ID to Other Enrichment Analysis Tools**
+
+7. **(Optional) Download KEGG Bubble Plot (pptx)**
+
+> **Note**: Check Progress in the console
+
+### 4.5 Report Download
+
+<div align="center">
+  <img src="custom/report_download.png" alt="Report Download Interface" width="800" />
+  <br>
+  <em>Figure 7: Report Download Interface</em>
+</div>
+
+1. **Run Report Generation**
+
+> **Note**: Files will be packaged into a zip file and download automatically.
 
 ---
 
-## 7. Troubleshooting
+## 5. Troubleshooting
 
 ### Common Issues and Solutions
 
@@ -312,53 +260,7 @@ MetaboAnnotator::run_ui()
 
 ---
 
-## 9. Best Practices
-
-### 9.1 Input Data
-
-- **Use standardized compound names**
-  - Follow IUPAC nomenclature when possible
-  - Include common synonyms for better matching
-
-- **Verify spelling and formatting**
-  - Double-check compound names before submission
-  - Avoid special characters unless part of the name
-
-- **Keep batch sizes manageable**
-  - Process 50-100 compounds at a time for optimal performance
-  - Split larger datasets into multiple runs
-
-### 9.2 AI Model Selection
-
-- **Choose appropriate models for your use case**
-  - `deepseek` for general compound identification
-  - `gpt-4o-mini` for more complex structural analysis
-
-- **Configure custom prompts for specific needs**
-  - Add domain-specific rules
-  - Include special cases for your compound classes
-
-- **Review and validate AI suggestions**
-  - Always verify AI results against database matches
-  - Use AI as an assistant, not the final authority
-
-### 9.3 Database Updates
-
-- **Regular cache clearing for fresh results**
-  - Clear cache weekly for frequent users
-  - Always clear before critical analyses
-
-- **Verify database version compatibility**
-  - Check for database updates in the console logs
-  - Update application if database formats change
-
-- **Monitor update notifications**
-  - Watch for messages about database changes
-  - Update reference files when prompted
-
----
-
-## 10. Technical Support
+## 9. Technical Support
 
 ### Getting Help
 
