@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_图层_2" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.4 66.57">
+<svg id="_图层_2" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151.66 64.87">
   <defs>
     <style>
       .cls-1, .cls-2 {
@@ -36,16 +36,16 @@
     </style>
   </defs>
   <g id="_图层_1-2" data-name="图层 1">
+    <polygon class="cls-6" points="27.47 24.08 14.24 31.72 1 24.08 1 8.8 14.24 1.15 27.47 8.8 27.47 24.08"/>
+    <polygon class="cls-6" points="27.47 56.07 14.24 63.71 1 56.07 1 40.79 14.24 33.14 27.47 40.79 27.47 56.07"/>
+    <text class="cls-2" transform="translate(4.14 25.38)"><tspan class="cls-5" x="0" y="0">M </tspan><tspan class="cls-7" x="26.66" y="0">etFusion </tspan><tspan class="cls-3" x="0" y="30" xml:space="preserve">   </tspan><tspan class="cls-4" x="1.67" y="30">A</tspan><tspan class="cls-5" x="18.11" y="30"> </tspan><tspan class="cls-7" x="24.78" y="30">nnotator</tspan></text>
     <g>
-      <polygon class="cls-6" points="27.47 25.79 14.24 33.43 1 25.79 1 10.5 14.24 2.86 27.47 10.5 27.47 25.79"/>
-      <polygon class="cls-6" points="27.47 57.78 14.24 65.42 1 57.78 1 42.49 14.24 34.85 27.47 42.49 27.47 57.78"/>
-      <text class="cls-2" transform="translate(4.14 27.09)"><tspan class="cls-5" x="0" y="0">M </tspan><tspan class="cls-7" x="26.66" y="0">etabo </tspan><tspan class="cls-3" x="0" y="30" xml:space="preserve">   </tspan><tspan class="cls-4" x="1.67" y="30">A</tspan><tspan class="cls-5" x="18.11" y="30"> </tspan><tspan class="cls-7" x="24.78" y="30">nnotator</tspan></text>
-      <circle class="cls-1" cx="86.59" cy="4.95" r="2.09"/>
-      <circle class="cls-1" cx="82.07" cy="1.61" r="1.61"/>
-      <circle class="cls-1" cx="91.43" cy="9.9" r="2.75"/>
-      <circle class="cls-1" cx="96.89" cy="16.69" r="4.04"/>
-      <circle class="cls-1" cx="102.87" cy="25.38" r="5.05"/>
-      <circle class="cls-1" cx="106.69" cy="37.19" r="5.76"/>
+      <circle class="cls-1" cx="125.8" cy="49.67" r="2.09"/>
+      <circle class="cls-1" cx="121.28" cy="53.01" r="1.61"/>
+      <circle class="cls-1" cx="130.64" cy="44.72" r="2.75"/>
+      <circle class="cls-1" cx="136.1" cy="37.92" r="4.04"/>
+      <circle class="cls-1" cx="142.08" cy="29.24" r="5.05"/>
+      <circle class="cls-1" cx="145.9" cy="17.43" r="5.76"/>
     </g>
   </g>
 </svg>
