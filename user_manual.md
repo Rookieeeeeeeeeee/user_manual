@@ -281,7 +281,7 @@ The application integrates with multiple databases:
 |----------|---------|-----------|
 | PubChem | Chemical information | Kim S, et al. (2018) |
 | HMDB | Human metabolome | Wishart DS, et al. (2022) |
-| mzCloud | Mass spectra | - |
+| mzCloud | Endogenous information | - |
 | KEGG | Pathway data | Kanehisa M, et al. (2025) |
 | CTD | Toxicogenomics | Davis AP, et al. (2024) |
 | Reactome | Pathway knowledge | Milacic M, et al. (2024) |
