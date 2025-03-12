@@ -1,6 +1,6 @@
 ---
 layout: default
-title: MetaboAnnotator User Manual
+title: MetaFusionAnnotator User Manual
 ---
 
 {% include_relative user_manual.md %} 

@@ -1,10 +1,7 @@
-# MetaboAnnotator User Manual
 
-<div align="center">
-  <img src="custom/icon.svg" alt="MetaboAnnotator Logo" width="150" />
-  <br>
-  <em>Comprehensive Metabolomics Data Analysis and Annotation Tool</em>
-</div>
+> **DISCLAIMER:** This package is provided for academic and research purposes only. Commercial use is strictly prohibited without prior written consent from the authors.
+
+> **Note:** The data linked with this package is integrated from the sources: `Pubchem`, `HMDB`, `mzCloud`, `KEGG`, `CTD`, `Reactome`, `ChEBI`. Detailed information please refer to the `Data sources` section.
 
 ## Table of Contents
 
@@ -23,12 +20,12 @@
 
 ## 1. Introduction
 
-**MetaboAnnotator** is a powerful R-based application designed for metabolites fusion functional annotation. It provides an integrated solution for real-time compound retrieval coupled with AI-assisted identification, and multi-database metabolite functional annotation.
+**MetaFusionAnnotator** is a powerful R-based application designed for metabolites fusion functional annotation. It provides an integrated solution for real-time compound retrieval coupled with AI-assisted identification, and multi-database metabolite functional annotation.
 
 <div align="center">
-  <img src="custom/roadmap.png" alt="MetaboAnnotator Workflow" width="800" />
+  <img src="custom/roadmap.png" alt="MetaFusionAnnotator Workflow" width="800" />
   <br>
-  <em>Figure 1: MetaboAnnotator Workflow</em>
+  <em>Figure 1: MetaFusionAnnotator Workflow</em>
 </div>
 
 ### Key Features
