@@ -20,12 +20,12 @@
 
 ## 1. Introduction
 
-**MetaFusionAnnotator** is a powerful R-based application designed for metabolites fusion functional annotation. It provides an integrated solution for real-time compound retrieval coupled with AI-assisted identification, and multi-database metabolite functional annotation.
+**MetFusionAnnotator** is a powerful R-based application designed for metabolites fusion functional annotation. It provides an integrated solution for real-time compound retrieval coupled with AI-assisted identification, and multi-database metabolite functional annotation.
 
 <div align="center">
-  <img src="custom/roadmap.png" alt="MetaFusionAnnotator Workflow" width="800" />
+  <img src="custom/roadmap.png" alt="MetFusionAnnotator Workflow" width="800" />
   <br>
-  <em>Figure 1: MetaFusionAnnotator Workflow</em>
+  <em>Figure 1: MetFusionAnnotator Workflow</em>
 </div>
 
 ### Key Features
@@ -292,6 +292,6 @@ Each database is regularly updated to ensure accurate and current information fo
 ---
 
 <div align="center">
-  <p>This manual provides a comprehensive guide to using MetaboAnnotator. For specific questions or issues not covered here, please refer to the project's issue page or contact technical support.</p>
-  <p>© 2024 MetaboAnnotator Team. All rights reserved.</p>
+  <p>This manual provides a comprehensive guide to using MetFusionAnnotator. For specific questions or issues not covered here, please refer to the project's issue page or contact technical support.</p>
+  <p>© 2025 MetFusionAnnotator Team. All rights reserved.</p>
 </div>
